@@ -1,0 +1,160 @@
+/* 
+COLOR PALETTE
+--gunmetal: #1B2A33ff;
+--lavender-floral: #C794FCff;
+--mexican-pink: #E00A7Dff;
+--white: #FEFEFEff;
+--deep cerulean: #0A51FCff;
+*/
+
+/* GLOBAL STYLES 
+----------------------------------*/
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    background: lavenderblush;
+    margin: 0;
+}
+
+/* links */
+a {
+    color: #E00A7Dff;
+}
+
+a:hover {
+    color: #0077b5;
+    text-decoration: none;
+}
+
+footer a {
+    color: #E00A7Dff;
+
+}
+
+footer a:hover {
+    color: #0077b5;
+}
+
+.btn {
+    background: #C794FCff;
+    color: #FEFEFEff;
+    text-decoration: none;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
+/* HOME 
+----------------------------------*/
+.home {
+    background: url(../images/background2.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+
+.content-bg {
+    background: rgb(199 148 252 / 0.9);
+    padding: 30px;
+}
+
+/* RESUME 
+----------------------------------*/
+.resume header::before {
+    background: url(../images/background2.jpg) bottom;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+}
+
+.resume {
+    margin-bottom: 50px;
+}
+
+.resume-section h2 {
+    border-bottom: 2px dashed #C794FCff
+}
+
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+
+/* Profile
+----------------------------------*/
+.project-item {
+    display: flow-root;
+    margin: 30px 0;
+}
+
+.project-item img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+
+}
+
+/* Projects
+----------------------------------*/
+/* Work Experience 
+----------------------------------*/
+.work-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
+
+/* Education
+----------------------------------*/
+/* FOOTER
+----------------------------------*/
+footer {
+    background: #1B2A33ff;
+    color: #FEFEFEff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.socials img {
+    width: 32px;
+}
+
+.socials img:hover {
+    opacity: 0.5;
+}
